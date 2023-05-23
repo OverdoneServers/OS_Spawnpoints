@@ -1,12 +1,7 @@
 local MODULE = {}
 
-MODULE.DisplayName = "OS: Spawnpoints"
-MODULE.FolderName = "os_spawnpoints"
+MODULE.DisplayName = "Spawnpoints"
 MODULE.Version = "1.0.0"
-
-OverdoneServers.OS_Spawnpoints = OverdoneServers.OS_Spawnpoints or {}
-MODULE.PublicVar = OverdoneServers.OS_Spawnpoints
-OverdoneServers.OS_Spawnpoints.Module = MODULE
 
 MODULE.DataToLoad = {
     Client = {
@@ -21,4 +16,4 @@ MODULE.DataToLoad = {
     Fonts = {}
 }
 
-OverdoneServers:AddModule(MODULE)
+return MODULE
