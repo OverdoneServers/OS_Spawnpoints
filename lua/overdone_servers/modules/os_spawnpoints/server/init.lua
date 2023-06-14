@@ -1,4 +1,7 @@
-hook.Add("PlayerSelectSpawn", "OverdoneServers:Spawnpoint", function(ply)
+local module = OverdoneServers:GetModule("os_spawnpoints")
+local SP = module.Data
+
+module:HookAdd("PlayerSelectSpawn", "OverdoneServers:Spawnpoint", function(ply)
     local spawns = ents.FindByClass("os_spawnpoint")
 
     local spawn = nil
